@@ -22,7 +22,7 @@ public class GameManager : MonoBehaviour
             allowGamepads = false,
             maxPlayersPerRoom = 4,
             skipLobby = false,
-            gameId = "b91dbRgm147zmfoL798i",
+            gameId = "UiyDcR5bSOjj9i1AASDW",
             discord = true
         };
 
@@ -61,7 +61,7 @@ public class GameManager : MonoBehaviour
     public static void AddPlayer(PlayroomKit.Player player)
     {
         GameObject playerObj = (GameObject)Instantiate(Resources.Load("Player"),
-            new Vector3(Random.Range(-4, 4), Random.Range(1, 5), 0), Quaternion.identity);
+            new Vector3(0, 0, 0), Quaternion.identity);
 
         // player color based on profile's color
         playerObj.GetComponent<SpriteRenderer>().color = player.GetProfile().color;
