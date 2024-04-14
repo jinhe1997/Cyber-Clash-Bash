@@ -1,3 +1,10 @@
+# Ignore the auto-generated AOT compatibility dll.
+/Assets/Plugins/Sirenix/Assemblies/AOT/*
+
+# Ignore all unpacked demos.
+/Assets/Plugins/Sirenix/Demos/*
+
+
 # This .gitignore file should be placed at the root of your Unity project directory
 #
 # Get latest from https://github.com/github/gitignore/blob/main/Unity.gitignore
@@ -207,3 +214,5 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+
